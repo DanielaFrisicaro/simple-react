@@ -3,6 +3,8 @@ import React from 'react';
 import Serie from './components/Serie'
 import TiraPeliculas from './components/TiraPeliculas'
 import ContenedorPublicidad from './components/ContenedorPublicidad'
+import Contador from './components/Contador'
+import Gif from './components/Gif'
 
 //uso MAP, FILTER o REDUCE para iterar sobre un Array o imprimir su contenido, NO FOR ni FOR EACH.
 
@@ -13,10 +15,12 @@ function App() {
 
       </header>
       <main>
+        <Gif/>
         <ContenedorPublicidad>
           <h2> Aqui están las publicidades!!!
           </h2>
         </ContenedorPublicidad>
+        <Contador inicial = {0} />
         <Serie />
         <TiraPeliculas />
         <TiraPeliculas />

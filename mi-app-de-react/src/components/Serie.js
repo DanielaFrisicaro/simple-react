@@ -13,15 +13,7 @@ function Serie() {
 
             <h2>
                 {season} 1
-                <Capitulos />
-                <ul>
-                <h5>Personajes</h5>
-                {actors.map(actor => <li> {actor}</li>)}
-               </ul>
-            </h2>
-            <h2>
-                {season} 2
-                <Capitulos nombre = 'Tom s Rhinoplasty'/>
+                <Capitulos nombre = 'Tom s Rhinoplasty' />
                 <ul>
                 <h5>Personajes</h5>
                 {actors.map(actor => <li> {actor}</li>)}
