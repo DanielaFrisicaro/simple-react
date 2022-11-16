@@ -31,6 +31,7 @@ class Gif extends Component {
     }
 
     componentDidMount() {
+        //console.log('%cSe ha montado', 'color: red')
         console.log('Se ha montado')
         this.traerGifNuevo()
     }
@@ -51,7 +52,10 @@ class Gif extends Component {
         console.log('Se ha actualizado')
         alert('Gif nuevo')
     }
-
+    /*
+    componentWillUnmount(){
+        console.log('Se ha desmontado Componente')
+    }*///se muestra en consola cuando se deja el Componente.
 
     render() {
         console.log('Se está renderizando')//REACT interpreta que en el momento en que actualizo un Estado, el render se debe volver a ejecutar.
@@ -61,7 +65,7 @@ class Gif extends Component {
         if (this.state.gif === '') {
             contenido = <p>Cargando...</p>
         } else {
-            contenido = <img src={this.state.gif} alt= 'gif' ></img>
+            contenido = <img src={this.state.gif} alt='gif' ></img>
         }
 
         return (
